@@ -25,7 +25,7 @@ h3 {
 
 h1,
 h2 {
-   text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 h2 {
@@ -50,10 +50,23 @@ h2 {
     width: 30px;
 }
 
+/* Header */
+
 #header .lead {
     font-family: var(--secondary-font);
 }
 
+/* Services */
+
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
 
 /*
 .container {
@@ -64,3 +77,37 @@ h2 {
     border: 2px solid white;
     background-color: lightgray;
 } /*
+
+/* Media queries */
+
+/* 768px screen sizes*/
+@media screen and (min-width: 768px) {
+    /* Make all cards the same height */
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* 992px L screen sizes*/
+@media screen and (min-width: 992px) {
+    /* Make all cards the same height */
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* 1200px XL screen sizes*/
+@media screen and (min-width: 1200px) {
+    /* Make all cards the same height */
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* 1400px XXL screen sizes*/
+@media screen and (min-width: 1400px) {
+    /* Make all cards the same height */
+    #services .card-body {
+        min-height: 195px;
+    }
+}
