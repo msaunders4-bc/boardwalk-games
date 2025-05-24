@@ -68,6 +68,24 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* New Games */
+
+#new-games .card {
+    margin-bottom: 1.5rem;
+}
+
+/* New Games Footer */
+
+#new-games .card-footer {
+    background-color: transparent;
+}
+
+/* Fav Games */
+#fav-games .card {
+    margin-bottom: 1.5rem;
+}
+
+
 /*
 .container {
     border: 2px solid black;
@@ -109,5 +127,34 @@ h2 {
     /* Make all cards the same height */
     #services .card-body {
         min-height: 195px;
+    }
+}
+
+/* New Games */
+
+/* 768px XXL screen sizes*/
+@media screen and (min-width: 768px) {
+    /* Make all cards the same height */
+    #new-games .card-body {
+        min-height: 220px;
+    }
+}
+
+
+/* Fav Games */
+
+/* 768px L screen sizes*/
+@media screen and (min-width: 768px) {
+    /* Make all cards the same height */
+    #fav-games .card-body {
+        min-height: 314px;
+    }
+}
+
+/* 1200px XL screen sizes*/
+@media screen and (min-width: 1200px) {
+    /* Make all cards the same height */
+    #fav-games .card-body {
+        min-height: 340px;
     }
 }
